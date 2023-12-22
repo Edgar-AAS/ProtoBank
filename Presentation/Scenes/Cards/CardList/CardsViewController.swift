@@ -38,6 +38,7 @@ public class CardsViewController: UIViewController, CardsViewProtocol {
     }
 }
 
+//MARK: - Ferindo enpasulamento
 extension CardsViewController: UpdateCardListCells {
     public func updateCardsList(cardListSource: CardListSource) {
         self.virtualCards = cardListSource.virtualCards
@@ -59,6 +60,7 @@ extension CardsViewController: UITableViewDataSource {
         }
     }
     
+//MARK: -Remover logica de listagem de cartao da controller
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == .zero {
             if indexPath.row <= virtualCards.count - 1 {

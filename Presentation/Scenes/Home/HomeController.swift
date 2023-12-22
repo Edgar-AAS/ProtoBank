@@ -27,6 +27,11 @@ public final class HomeController: UITableViewController, HomeControllerProtocol
     
     public override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
+    }
+    
+    
+    private func configureView() {
         removeBackButtonTitle()
         registerTableViewCells()
         setupTableviewProperties()

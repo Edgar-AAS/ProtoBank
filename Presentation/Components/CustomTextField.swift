@@ -21,6 +21,7 @@ final class CustomTextField: UITextField {
         textColor = .white
         backgroundColor = UIColor(hexString: "0A2647")
         layer.cornerRadius = 12
+        borderStyle = .roundedRect
         layer.borderWidth = 1
         layer.borderColor = Colors.secundaryColor.cgColor
         let attributes = [NSAttributedString.Key.foregroundColor: UIColor.lightGray]

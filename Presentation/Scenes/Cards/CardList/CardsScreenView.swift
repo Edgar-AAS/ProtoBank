@@ -43,7 +43,7 @@ extension CardsScreenView: CodeView {
     
     func setupConstrains() {
         myCardsTitleLabel.fillConstraints(
-            top: safeAreaLayoutGuide.topAnchor,
+            top: topAnchor,
             leading: leadingAnchor,
             trailing: trailingAnchor,
             bottom: nil,

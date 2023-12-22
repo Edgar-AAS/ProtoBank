@@ -20,10 +20,10 @@ public class NavigationController: UINavigationController {
     private func setup() {
         navigationBar.barTintColor = UIColor(hexString: "1A1A2E")
         navigationBar.tintColor = Colors.secundaryColor
+        navigationBar.backgroundColor = Colors.primaryColor
         navigationBar.isTranslucent = false
         navigationBar.barStyle = .black
         navigationBar.shadowImage = UIImage()
-        navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationItem.backButtonTitle = ""
         navigationBar.isHidden = true
     }
